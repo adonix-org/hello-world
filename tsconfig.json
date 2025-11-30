@@ -53,6 +53,5 @@
         /* Skip type checking all .d.ts files. */
         "skipLibCheck": true
     },
-    "exclude": ["test"],
     "include": ["types", "src/**/*.ts"]
 }

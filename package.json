@@ -6,7 +6,7 @@
     "scripts": {
         "types": "wrangler types --config wrangler.jsonc ./types/cloudflare.d.ts",
         "prebuild": "npm run lint && mkdir -p ./types && npm run types",
-        "build": "tsc && wrangler build",
+        "build": "wrangler build",
         "deploy": "tsc && wrangler deploy",
         "dev": "wrangler dev",
         "start": "wrangler dev",
