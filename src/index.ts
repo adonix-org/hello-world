@@ -1,18 +1,25 @@
-/**
- * Welcome to Cloudflare Workers! This is your first worker.
+/*
+ * Copyright (C) 2025 Ty Busby
  *
- * - Run `npm run dev` in your terminal to start a development server
- * - Open a browser tab at http://localhost:8787/ to see your worker in action
- * - Run `npm run deploy` to publish your worker
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
  *
- * Bind resources to your worker in `wrangler.jsonc`. After adding bindings, a type definition for the
- * `Env` object can be regenerated with `npm run cf-typegen`.
+ * http://www.apache.org/licenses/LICENSE-2.0
  *
- * Learn more at https://developers.cloudflare.com/workers/
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
-export default {
-	async fetch(request, env, ctx): Promise<Response> {
-		return new Response('Hello World!');
-	},
-} satisfies ExportedHandler<Env>;
+import { BasicWorker, TextResponse } from "@adonix.org/cloud-spark";
+
+class HelloWorld extends BasicWorker {
+    get() {
+        return this.response(TextResponse, "Hi from Cloud Spark!");
+    }
+}
+
+export default HelloWorld.ignite();
