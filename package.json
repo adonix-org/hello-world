@@ -4,8 +4,8 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "types": "wrangler types --config wrangler.jsonc ./types/cloudflare.d.ts",
-        "prebuild": "npm run lint && mkdir -p ./types && npm run types",
+        "types": "mkdir -p ./types && wrangler types --config wrangler.jsonc ./types/cloudflare.d.ts",
+        "prebuild": "npm run lint && npm run types",
         "build": "wrangler build",
         "deploy": "tsc && wrangler deploy",
         "dev": "wrangler dev",
