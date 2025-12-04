@@ -5,6 +5,9 @@
 .vscode/
 .wrangler/
 
+# Secrets and Vars
+.dev.vars
+
 # Build outputs
 coverage/
 dist/
