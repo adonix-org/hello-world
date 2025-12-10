@@ -14,16 +14,16 @@
     },
     "devDependencies": {
         "@eslint/js": "^9.39.1",
-        "@typescript-eslint/eslint-plugin": "^8.48.0",
-        "@typescript-eslint/parser": "^8.48.0",
+        "@typescript-eslint/eslint-plugin": "^8.49.0",
+        "@typescript-eslint/parser": "^8.49.0",
         "eslint": "^9.39.1",
         "eslint-plugin-import": "^2.32.0",
         "jiti": "^2.6.1",
-        "typescript": "^5.5.2",
-        "typescript-eslint": "^8.48.0",
-        "wrangler": "^4.51.0"
+        "typescript": "^5.9.3",
+        "typescript-eslint": "^8.49.0",
+        "wrangler": "^4.53.0"
     },
     "dependencies": {
-        "@adonix.org/cloud-spark": "^1.0.0"
+        "@adonix.org/cloud-spark": "^1.0.2"
     }
 }

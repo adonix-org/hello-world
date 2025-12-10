@@ -16,7 +16,7 @@
 
 {
     "$schema": "node_modules/wrangler/config-schema.json",
-    "name": "central-auth",
+    "name": "hello-world",
     "main": "src/index.ts",
     "compatibility_date": "2025-11-28",
     "observability": {
