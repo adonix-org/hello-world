@@ -22,5 +22,6 @@
     "observability": {
         "enabled": true
     },
+    "minify": true,
     "placement": { "mode": "smart" }
 }
